@@ -35,14 +35,11 @@ var elizaPres = [
 "herinneren", "onthouden",
 "gedroomd", "gedroomd",
 "dromen", "dromen",
-"misschien wellicht",
-"zeker", "ja",
-"machine", "computer",
+"misschien", "wellicht",
+"zeker", "inderdaad", "ja",
+"ja", "computer",
 "machines", "computer",
 "computers", "computer",
-"waren was",
-"Jij bent jij bent",
-"ik ben ik ben",
 "hetzelfde", "gelijk",
 "identiek", "gelijk",
 "equivalent", "gelijk"
@@ -50,23 +47,23 @@ var elizaPres = [
 
 var elizaPosts = [
 "ben", "zijn",
-"jouw mijn",
-"ik jij",
-"ikzelf jijzelf",
-"jijzelf mijzelf",
-"ik jij",
-"jij ik",
-"mijn Jouw",
+"jouw", "mijn",
+"ik", "jij",
+"ikzelf", "jijzelf",
+"jijzelf", "mijzelf",
+"ik", "jij",
+"jij", "ik",
+"mijn", "jouw",
 "ik ben", "jij bent"
 ];
 
 var elizaSynons = {
-"be": ["ben", "is", "are", "was"],
+"zijn": ["ben", "is", "zijn", "was"],
 "geloof": ["voel", "denk", "geloof", "wens"],
 "kan niet": ["kan niet"],
-"desire": ["want", "need"],
-"iedereen": ["iedereen", "niemand", "niemand"],
-"familie": ["moeder", "moeder", "vader", "vader", "zus", "broer", "vrouw", "kinderen", "kind"],
+"verlangen": ["willen", "wensen"],
+"iedereen": ["iedereen", "niemand"],
+"familie": ["moeder", "mam", "vader", "pap", "zus", "broer", "vrouw", "kinderen", "kind", "man", "neef", "nicht"],
 "blij": ["opgetogen", "blij", "beter"],
 "verdrietig": ["ongelukkig", "depressief", "ziek"]
 };
@@ -110,7 +107,7 @@ var elizaKeywords = [
 ]],
 ["excuses", 0, [
  ["*", [
-     "ga sorry"
+     "goto sorry"
   ]]
 ]],
 ["onthouden", 5, [
@@ -200,25 +197,25 @@ var elizaKeywords = [
 ]],
 ["deutsch", 0, [
  ["*", [
-     "ga naar xforeign",
+     "goto xforeign",
      'Ik heb je al eerder gezegd dat ik geen Duits versta.'
   ]]
 ]],
 ["francais", 0, [
  ["*", [
-     "ga naar xforeign",
+     "goto xforeign",
      'Ik heb je al eerder gezegd dat ik geen Frans versta.'
   ]]
 ]],
 ["italiano", 0, [
  ["*", [
-     "ga naar xforeign",
+     "goto xforeign",
      'Ik heb je al eerder gezegd dat ik geen Italiaans versta.'
   ]]
 ]],
 ["espanol", 0, [
  ["*", [
-     "ga naar xforeign",
+     "goto xforeign",
      'Ik heb je al eerder gezegd dat ik geen Spaans versta.'
   ]]
 ]],
@@ -383,11 +380,11 @@ var elizaKeywords = [
      "Kun je daar wat meer over zeggen?",
      "Zeg je (1) om een ​​speciale reden?",
      "Dat is best interessant."
-  ]]
+  ]],
 ]],
 ["jij", 0, [
  ["* je doet me denken aan *", [
-     "ga gelijk"
+     "goto gelijk"
   ]],
  ["* je bent *", [
      "Waarom denk je dat ik ben (2)?",
@@ -553,11 +550,6 @@ var elizaKeywords = [
      "goto iedereen"
   ]]
 ]],
-["noone", 2, [
- ["*", [
-     "goto iedereen"
-  ]]
-]],
 ["altijd", 1, [
  ["*", [
      "Kun je een specifiek voorbeeld bedenken?",
@@ -580,7 +572,7 @@ var elizaKeywords = [
 ]],
 ["like", 10, [
  ["* @wees als *", [
-     "ga gelijk"
+     "goto gelijk"
   ]]
 ]],
 ["anders", 0, [
