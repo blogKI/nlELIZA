@@ -127,13 +127,13 @@ var elizaKeywords = [
      "Dacht je dat ik (2) zou vergeten?",
      "Waarom denk je dat ik me (2) nu moet herinneren?",
      "Hoe zit het met (2)?",
-     "ga naar wat",
+     "goto wat",
      "U noemde (2)?"
   ]],
  ["* weet je nog *", [
      "Hoe kon ik (2) vergeten?",
      "Hoe zit het met (2) moet ik onthouden?",
-     "ga naar jou"
+     "goto jij"
   ]]
 ]],
 ["vergeten", 5, [
@@ -151,7 +151,7 @@ var elizaKeywords = [
      "Weet je zeker dat je het me verteld hebt?",
      "Zou het je storen als ik het vergeten was (2)?",
      "Waarom zou ik me (2) zojuist herinneren?",
-     "ga naar wat",
+     "goto wat",
      "Vertel me meer over (2)."
   ]]
 ]],
@@ -171,7 +171,7 @@ var elizaKeywords = [
      "Echt, (2)?",
      "Heb je ooit gefantaseerd (2) terwijl je wakker was?",
      "Heb je ooit eerder gedroomd (2)?",
-     "ga naar droom"
+     "goto droom"
   ]]
 ]],
 ["droom", 3, [
@@ -250,10 +250,10 @@ var elizaKeywords = [
      "Zou je willen zijn (2)?",
      "Zou je willen dat ik je zou vertellen dat je (2) bent?",
      "Wat zou het betekenen als je (2) was?",
-     "ga naar wat"
+     "goto wat"
   ]],
  ["* ik ben *", [
-     "ga naar ik"
+     "goto ik"
   ]],
  ["*", [
      "Waarom zeg je 'ben'?",
@@ -266,12 +266,12 @@ var elizaKeywords = [
      "Zou je liever hebben als ik niet (2) was?",
      "Misschien ben ik (2) in uw fantasieën.",
      "Denk je wel eens dat ik ben (2)?",
-     "ga naar wat",
+     "goto wat",
      "Zou het u iets kunnen schelen?",
      "Wat als ik (2) was?"
   ]],
  ["* je bent *", [
-     "ga naar jou"
+     "goto jij"
   ]],
  ["* zijn *", [
      "Dacht je dat ze misschien niet (2) zijn?",
@@ -299,7 +299,7 @@ var elizaKeywords = [
      "Was jij (2)?",
      "Wat zou het betekenen als je (2) was?",
      "Wat stelt '(2)' u voor?",
-     "ga naar wat"
+     "goto wat"
   ]],
  ["* ik was *", [
      "Was je dat echt?",
@@ -314,7 +314,7 @@ var elizaKeywords = [
      "Wat als ik (2) was geweest?"
   ]]
 ]],
-["i", 0, [
+["ik", 0, [
  ["* ik verlang *", [
      "Wat zou het voor u betekenen als u (3) kreeg?",
      "Waarom wil je (3)?",
@@ -344,7 +344,7 @@ var elizaKeywords = [
      "Twijfel je echt aan jou (3)?"
   ]],
  ["* i * @belief * you *", [
-     "ga naar jou"
+     "goto jij"
   ]],
  ["* ik ben *", [
      "Is het omdat je (2) bent dat je naar mij kwam?",
@@ -459,7 +459,7 @@ var elizaKeywords = [
 ["kan", 0, [
  ["* kunt u *", [
      "Je gelooft dat ik het kan (2) nietwaar?",
-     "ga naar wat",
+     "goto wat",
      "Je wilt dat ik in staat ben om (2).",
      "Misschien zou je graag (2) jezelf willen kunnen."
   ]],
@@ -467,7 +467,7 @@ var elizaKeywords = [
      "Of je het wel of niet kunt (2) hangt meer van jou af dan van mij.",
      "Wil je in staat zijn om (2)?",
      "Misschien wil je niet (2).",
-     "ga naar wat"
+     "goto wat"
   ]]
 ]],
 ["wat", 0, [
@@ -485,22 +485,22 @@ var elizaKeywords = [
 ]],
 ["wie", 0, [
  ["wie *", [
-     "ga naar wat"
+     "goto wat"
   ]]
 ]],
 ["wanneer", 0, [
  ["wanneer *", [
-     "ga naar wat"
+     "goto wat"
   ]]
 ]],
 ["waar", 0, [
  ["waar *", [
-     "ga naar wat"
+     "goto wat"
   ]]
 ]],
 ["hoe", 0, [
  ["hoe *", [
-     "ga naar wat"
+     "goto wat"
   ]]
 ]],
 ["omdat", 0, [
@@ -517,17 +517,17 @@ var elizaKeywords = [
      "Misschien zal ik (2) op tijd.",
      "Moet je (2) jezelf?",
      "Wil je dat ik (2)?",
-     "ga naar wat"
+     "goto wat"
   ]],
  ["* waarom kan ik niet *", [
      "Vind je dat je zou moeten kunnen (2)?",
      "Wil je in staat zijn om (2)?",
      "Gelooft u dat dit u zal helpen om (2)?",
      "Heb je enig idee waarom je dat niet kunt (2)?",
-     "ga naar wat"
+     "goto wat"
   ]],
  ["*", [
-     "ga naar wat"
+     "goto wat"
   ]]
 ]],
 ["iedereen", 2, [
@@ -545,17 +545,17 @@ var elizaKeywords = [
 ]],
 ["iedereen", 2, [
  ["*", [
-     "ga naar iedereen"
+     "goto iedereen"
   ]]
 ]],
 ["niemand", 2, [
  ["*", [
-     "ga naar iedereen"
+     "goto iedereen"
   ]]
 ]],
 ["noone", 2, [
  ["*", [
-     "ga naar iedereen"
+     "goto iedereen"
   ]]
 ]],
 ["altijd", 1, [
